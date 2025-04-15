@@ -35,3 +35,12 @@ hashmap.c:57:10: error: unused variable 'datoOriginal' [-Werror=unused-variable]
           ^~~~~~~~~~~~
 cc1.exe: all warnings being treated as errors
 c1d1cea
+Tue, Apr 15, 2025  1:03:35 PM: 
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'insertMap':
+hashmap.c:57:10: error: unused variable 'datoOriginal' [-Werror=unused-variable]
+     long datoOriginal = dato;
+          ^~~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+1447ffc
