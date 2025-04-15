@@ -41,8 +41,9 @@ int is_equal(void* key1, void* key2){
 
 void insertMap(HashMap * map, char * key, void * value)
 {
-    //MMMM que hago?
-    if(map == NULL || key == NULL)return; 
+    //MMMM y ahora que hago?
+    if(map == NULL || key == NULL)return;  //si es null no se puede insertar nada
+
 
 
 }
@@ -57,11 +58,11 @@ void enlarge(HashMap * map)
 
 HashMap * createMap(long capacity)
 {
-    HashMap *map = (HashMap*)malloc(sizeof(HashMap));
-    map->buckets = (Pair**)calloc(capacity, sizeof(Pair*));
+    HashMap *map = (HashMap*)malloc(sizeof(HashMap)); //asignar memoria al maphash
+    map->buckets = (Pair**)calloc(capacity, sizeof(Pair*)); //inizializar memoria a las casillas?
     map->capacity = capacity;
     map->size = 0; //Inicializa en 0
-    map->current = -1;
+    map->current = -1; //Invalido de momento
     return map;
 }
 

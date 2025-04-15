@@ -8,3 +8,9 @@ lu., 14 de abr. de 2025 22:51:31:
  tests:  1|5
 total_score: 10/70
 3a3507d
+lu., 14 de abr. de 2025 23:11:03: 
+ hashmap.c | 11 ++++++-----
+ 1 file changed, 6 insertions(+), 5 deletions(-)
+ tests:  1|5
+total_score: 10/70
+cc8938d
