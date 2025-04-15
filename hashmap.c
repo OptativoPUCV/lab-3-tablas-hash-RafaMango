@@ -59,7 +59,9 @@ void insertMap(HashMap * map, char * key, void * value)
     while(map->buckets[dato] != NULL && map->buckets[dato]->key != NULL  )
     {
         if(is_equal(map->buckets[dato]->key, key))return;
-        
+        //tengo que cambiar a dato aqui, segun capacidad 
+        if(dato == datoOriginal) return;
+
     }
     
     Pair* nuevoPar = createPair(strdup(key), value); //
