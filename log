@@ -24,3 +24,14 @@ Tue, Apr 15, 2025 12:51:23 PM:
  tests:  1|5
 total_score: 10/70
 891f5fc
+Tue, Apr 15, 2025  1:03:16 PM: 
+ hashmap.c | 18 +++++++-----------
+ 1 file changed, 7 insertions(+), 11 deletions(-)
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'insertMap':
+hashmap.c:57:10: error: unused variable 'datoOriginal' [-Werror=unused-variable]
+     long datoOriginal = dato;
+          ^~~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+c1d1cea

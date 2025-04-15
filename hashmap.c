@@ -43,7 +43,7 @@ int is_equal(void* key1, void* key2){
 
 a - Aplicar la función hash a la clave para obtener la posición donde debería insertar el nuevo par ---
 
-b - Si la casilla se encuentra ocupada, avance hasta una casilla disponible (método de resolución de colisiones). Una casilla disponible es una casilla nula, pero también una que tenga un par inválido (key==NULL).
+b - Si la casilla se encuentra ocupada (ecual), avance hasta una casilla disponible (método de resolución de colisiones). Una casilla disponible es una casilla nula, pero también una que tenga un par inválido (key==NULL).
 
 c - Ingrese el par en la casilla que encontró.
 
@@ -53,23 +53,19 @@ void insertMap(HashMap * map, char * key, void * value)
 {
     if(map == NULL || key == NULL)return;  //si es null no se puede
 
-    //long dato = hash(key, map->capacity);
-    //long datoOriginal = dato;
+    long dato = hash(key, map->capacity);
+    long datoOriginal = dato;
 
-    /*
-    //for(dato; condicion; )
-    while(map->)
+    while(map->buckets[dato] != NULL && map->buckets[dato]->key != NULL  )
     {
-
-        condiciones, condiciones condiciones
-
+        if(is_equal(map->buckets[dato]->key, key))return;
+        
     }
     
     Pair* nuevoPar = createPair(strdup(key), value); //
-    map->bucket[dato] = nuevoPar;
-    map->size;
+    map->buckets[dato] = nuevoPar;
+    map->size++; //
     map->current = dato;
-    */
 }
 
 void enlarge(HashMap * map) 
