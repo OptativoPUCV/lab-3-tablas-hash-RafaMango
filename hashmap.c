@@ -59,7 +59,7 @@ void insertMap(HashMap * map, char * key, void * value)
     while(map->buckets[dato] != NULL && map->buckets[dato]->key != NULL  )
     {
         if(is_equal(map->buckets[dato]->key, key))return;
-        //tengo que cambiar a dato aqui, segun capacidad 
+        dato = (dato+1) % map->capacity;
         if(dato == datoOriginal) return;
 
     }
@@ -114,7 +114,7 @@ Pair * searchMap(HashMap * map,  char * key)
     if(map == NULL || key == NULL)return NULL;
 
     long dato = hash(key, map->capacity);
-
+    long datoOriginal = dato;
     while(map->buckets[dato] != NULL)
     {
         if(map->buckets[dato]->key != NULL && is_equal(map->buckets[dato]->key, key));
@@ -122,6 +122,8 @@ Pair * searchMap(HashMap * map,  char * key)
             map->current = dato;
             return map->buckets[dato];
         }
+        dato = (dato+1) % map->capacity;
+        if(dato == datoOriginal)break;
         //actualizar indice
     }
 

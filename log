@@ -80,3 +80,17 @@ hashmap.c:121:9: note: ...this statement, but the latter is misleadingly indente
          ^
 cc1.exe: all warnings being treated as errors
 14e6c8d
+do., 20 de abr. de 2025 17:32:12: 
+ hashmap.c | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'searchMap':
+hashmap.c:120:9: error: this 'if' clause does not guard... [-Werror=misleading-indentation]
+         if(map->buckets[dato]->key != NULL && is_equal(map->buckets[dato]->key, key));
+         ^~
+hashmap.c:121:9: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'if'
+         {
+         ^
+cc1.exe: all warnings being treated as errors
+8518d2d
