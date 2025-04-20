@@ -158,3 +158,9 @@ hashmap.c:93:13: error: unused variable 'antiguosBuckets' [-Werror=unused-variab
              ^~~~~~~~~~~~~~~
 cc1.exe: all warnings being treated as errors
 b1272d4
+do., 20 de abr. de 2025 18:05:24: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  17|0
+total_score: 70/70
+5114274

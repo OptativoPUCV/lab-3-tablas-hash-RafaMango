@@ -90,11 +90,11 @@ void enlarge(HashMap * map)
 {
     if(map == NULL)return;
     enlarge_called = 1; //no borrar (testing purposes)
-    Pair ** antiguosBuckets = map->buckets;
+    Pair** antiguosBuckets = map->buckets;
     long antiguaCapacity = map->capacity;
 
     map->capacity *= 2;
-    map->buckets = (Pair**)calloc(map->capacity, sizeof(Pair*);
+    map->buckets = (Pair**)calloc(map->capacity, sizeof(Pair*));
     map->size = 0;
     map->current = -1;
 
