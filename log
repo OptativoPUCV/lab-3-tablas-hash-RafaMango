@@ -164,3 +164,18 @@ do., 20 de abr. de 2025 18:05:24:
  tests:  17|0
 total_score: 70/70
 5114274
+do., 20 de abr. de 2025 18:31:28: 
+ hashmap.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'enlarge':
+hashmap.c:107:18: error: passing argument 1 of 'free' makes pointer from integer without a cast [-Werror=int-conversion]
+             free(antiguaCapacity);
+                  ^~~~~~~~~~~~~~~
+In file included from test.c:2:0:
+c:\mingw\include\stdlib.h:487:39: note: expected 'void *' but argument is of type 'long int'
+ _CRTIMP __cdecl __MINGW_NOTHROW  void free (void *);
+                                       ^~~~
+cc1.exe: all warnings being treated as errors
+0d1234f

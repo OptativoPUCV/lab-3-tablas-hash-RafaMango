@@ -103,9 +103,12 @@ void enlarge(HashMap * map)
         if(antiguosBuckets[i] != NULL && antiguosBuckets[i]->key != NULL)
         {
             insertMap(map, antiguosBuckets[i]->key, antiguosBuckets[i]->value);
-            
+            //liebrar Memoria antigua capacidad
+            free(antiguaCapacity);
         }
     }
+    //liberar Memoria antiguo arreglo
+    free(antiguosBuckets);
 }
 
 /*
@@ -197,6 +200,7 @@ Pair * nextMap(HashMap * map)
             return map->buckets[i];
         }
     }
+    //liberar memoria arreglo antiguo
     map->current = -1;
     return NULL;
 }
