@@ -117,7 +117,7 @@ Pair * searchMap(HashMap * map,  char * key)
     long datoOriginal = dato;
     while(map->buckets[dato] != NULL)
     {
-        if(map->buckets[dato]->key != NULL && is_equal(map->buckets[dato]->key, key));
+        if(map->buckets[dato]->key != NULL && is_equal(map->buckets[dato]->key, key))
         {
             map->current = dato;
             return map->buckets[dato];
