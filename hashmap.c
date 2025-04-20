@@ -148,9 +148,8 @@ Pair * firstMap(HashMap * map)
             map->current = i;
             return map->buckets[i];
         }
-        map->current = -1;
-        return NULL;
     }
+    map->current = -1;
     return NULL;
 }
 
