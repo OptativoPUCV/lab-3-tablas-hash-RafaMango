@@ -183,7 +183,6 @@ Pair * firstMap(HashMap * map)
             return map->buckets[i];
         }
     }
-    map->current = -1;
     return NULL;
 }
 
@@ -198,7 +197,5 @@ Pair * nextMap(HashMap * map)
             return map->buckets[i];
         }
     }
-    //liberar memoria arreglo antiguo
-    map->current = -1;
     return NULL;
 }
