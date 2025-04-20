@@ -138,3 +138,23 @@ do., 20 de abr. de 2025 17:55:06:
  tests:  16|1
 total_score: 60/70
 189719a
+do., 20 de abr. de 2025 18:04:27: 
+ hashmap.c | 33 +++++++++++++++++++++++++++++++++
+ 1 file changed, 33 insertions(+)
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'enlarge':
+hashmap.c:97:63: error: expected ')' before ';' token
+     map->buckets = (Pair**)calloc(map->capacity, sizeof(Pair*);
+                                                               ^
+hashmap.c:109:1: error: expected ';' before '}' token
+ }
+ ^
+hashmap.c:94:10: error: unused variable 'antiguaCapacity' [-Werror=unused-variable]
+     long antiguaCapacity = map->capacity;
+          ^~~~~~~~~~~~~~~
+hashmap.c:93:13: error: unused variable 'antiguosBuckets' [-Werror=unused-variable]
+     Pair ** antiguosBuckets = map->buckets;
+             ^~~~~~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+b1272d4
