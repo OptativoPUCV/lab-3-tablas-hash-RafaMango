@@ -95,7 +95,7 @@ Implemente la función void eraseMap(HashMap * map, char * key). Está función 
  */
 void eraseMap(HashMap * map,  char * key)
 {    
-    if(map == NULL || key == NULL)return NULL;
+    if(map == NULL || key == NULL)return;
 
     Pair *pair = searchMap(map, key);
     if(pair != NULL){
