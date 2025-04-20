@@ -185,3 +185,9 @@ do., 20 de abr. de 2025 18:32:34:
  tests:  17|0
 total_score: 70/70
 ee55006
+do., 20 de abr. de 2025 18:33:13: 
+ hashmap.c | 2 --
+ 1 file changed, 2 deletions(-)
+ tests:  17|0
+total_score: 70/70
+8787d80
