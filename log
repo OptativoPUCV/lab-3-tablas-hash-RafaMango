@@ -179,3 +179,9 @@ c:\mingw\include\stdlib.h:487:39: note: expected 'void *' but argument is of typ
                                        ^~~~
 cc1.exe: all warnings being treated as errors
 0d1234f
+do., 20 de abr. de 2025 18:32:34: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  17|0
+total_score: 70/70
+ee55006

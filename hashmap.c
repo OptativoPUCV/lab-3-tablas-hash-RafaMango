@@ -104,7 +104,7 @@ void enlarge(HashMap * map)
         {
             insertMap(map, antiguosBuckets[i]->key, antiguosBuckets[i]->value);
             //liebrar Memoria antigua capacidad
-            free(antiguaCapacity);
+            free(antiguosBuckets[i]);
         }
     }
     //liberar Memoria antiguo arreglo
